@@ -715,3 +715,19 @@ parts that deal with instruction timing and memory that are
 different. So you can have a single shared execution core
 that is used by two variants.
 
+Avalon signal timing
+--------------------
+
+The exact timing of the Avalon bus can be confusing, as it follows
+quite simple rules, but require quite a good understanding of
+clocked synchronous logic. There are a number of [extra waveforms
+and discussion](avalon-timing) available.
+
+**Note**: this only applies to the Bus interface.
+
+Endianess
+---------
+
+Working out how data is arranged in memory, and when endianess
+matters can be confusing (as it is quite deep), so there is
+a [longer discussion available](endianess).
