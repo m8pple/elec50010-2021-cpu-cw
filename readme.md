@@ -208,7 +208,8 @@ cycle, which means that the read or write request cannot complete in the
 current cycle, and so must be continued in the next cycle.
 See section 3.5.1 and Figure 7 of the
 [Avalon spec](https://www.intel.com/content/dam/www/programmable/us/en/pdfs/literature/manual/mnl_avalon_spec.pdf)
-for more info.
+for more info. There is also a more detailed discussion in [avalon-timing](avalon-timing)
+for specific transaction timing.
 
 Harvard interface
 -----------------
