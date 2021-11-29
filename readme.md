@@ -731,3 +731,25 @@ Endianess
 Working out how data is arranged in memory, and when endianess
 matters can be confusing (as it is quite deep), so there is
 a [longer discussion available](endianess).
+
+Packages
+--------
+
+If you have never heard of packages in Verilog then completely ignore this
+section - it is irrelevant to your team, has no effect on your test-bench
+or CPU and be completely ignored. This is in response to a request in:
+https://teams.microsoft.com/l/message/19:9bcf1ca37f324d3098eb7f7ada14c01e@thread.tacv2/1638192839625?tenantId=2b897507-ee8c-4575-830b-4f8267c3d307&groupId=434ac7bb-4d61-47f1-abf4-aa7a09221bce&parentMessageId=1638192839625&teamName=ELEC50010%20-%20Instruction%20Architectures%20and%20Compilers%20(Autumn%202021-2022)&channelName=Questions&createdTime=1638192839625
+
+The following guarantee is added for the assessment scripts:
+
+_if_ the file `rtl/mips_cpu/package.v` exists then it
+will appear first in the list of files passed to the verilog compilation tool.
+
+This is **only** a constraint on assessment scripts, and is not a requirement
+imposed on any other test-bench. 
+
+Anyone using packages in this way in their own CPU must bear in mind that it
+is only guaranteeing that the assessment test-bench will apply this ordering.
+It does not imply that any other CPU contains `rtl/mips_cpu/package.v`, and
+if your test-bench relies on the existence of this file during compilation
+then it will fail to compile.
