@@ -63,6 +63,7 @@ Your coursework deliverables consist of the following:
     - The approach taken to testing CPUs.
     - At least one diagram or flow-chart describing your testing flow or approach.
     - Area and timing summary for the "Cyclone IV E ‘Auto’" variant in Quartus (same as used in the EE1 "CPU" project).
+    - (2021/12/13) A 5th page may be used, but _only_ for references.
 
 4.  Peer feedback : individual submission by each group member to provide peer feedback
     on your team members, submitted via Microsoft Forms.
