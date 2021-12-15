@@ -566,6 +566,11 @@ Your test-bench should never modify anything located in the mips source director
 So it should not create any files in the source directory (e.g. `rtl`), and it
 definitely should not modify any of the files.
 
+The test-bench may include test-cases which do not map to any single instruction.
+Test-cases with instruction columns that do not match the specified instructions can just be ignored,
+so for example the instruction "internal" or "int" could be used for test-cases
+which test many instructions.
+
 Working and input directory
 -----------------
 
